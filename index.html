@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,height=device-height">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<script type="text/javascript" src="https://cdn.glitch.com/e614a6f8-f4ba-4733-8a7c-e61e5d59427e%2Fbundle.js?1551541439932"></script>
+	<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -18,7 +19,7 @@
                        
             // Invitation Video Handler
             
-            AFRAME.registerComponent('video-vidhandler', {
+            AFRAME.registerComponent('vidhandler', {
                 init: function() {
 		    console.log('video init entered');
                     this.toggle = false;
@@ -44,7 +45,8 @@
     function playvid() {
         vid.play();
     }
-
+</script>
+	    <script>
             // Count down Timer and Countdown Timer Component
 
             AFRAME.registerComponent('clock-text', {
